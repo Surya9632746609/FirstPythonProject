@@ -1,0 +1,33 @@
+1661435313521	geckodriver	INFO	Listening on 127.0.0.1:55993
+1661435316884	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55994" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\surya\\AppData\\Local\\Temp\\rust_mozprofileLZXGHJ"
+1661435327027	Marionette	INFO	Marionette enabled
+1661435327077	Marionette	INFO	Listening on port 56008
+WebDriver BiDi listening on ws://localhost:55994
+Read port: 56008
+1661435327994	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 768))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 420))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\surya\\AppData\\Local\\Temp\\rust_mozprofileLZXGHJ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55994/devtools/browser/0f31ea55-e383-4470-a61e-229b835c1582
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://portal.syncada.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://portal.syncada.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://portal.syncada.com."
+1661435373538	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+send@https://portal.syncada.com/USBank/scripts/jquery-3.6.0.min.js:2:82714
+ajax@https://portal.syncada.com/USBank/scripts/jquery-3.6.0.min.js:2:78291
+s.ajax@https://portal.syncada.com/USBank/scripts/jquery-migrate-3.3.0.min.js:2:3911
+WindowManager</this.list@https://portal.syncada.com/USBank/scripts/WindowManager.js:47:15
+@https://portal.syncada.com/USBank/scripts/WindowManager.js:2:19
+e@https://portal.syncada.com/USBank/scripts/jquery-3.6.0.min.js:2:30038
+Deferred/then/l/</t<@https://portal.syncada.com/USBank/scripts/jquery-3.6.0.min.js:2:30340
+1661435374489	Marionette	INFO	Stopped listening on port 56008
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: resource://gre/modules/CrashManager.jsm, line 905: AbortError: IOUtils: Shutting down and refusing additional I/O tasks
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"ContentParent: id=19243396400","state":{"remoteTypePrefix":"web"},"filename":"/builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp","lineNumber":3680,"stack":["resource://gre/modules/nsAsyncShutdown.jsm:addBlocker:164","chrome://global/content/elements/browser-custom-element.js:get loadContext:383","chrome://global/content/elements/browser-custom-element.js:construct:982","chrome://global/content/elements/browser-custom-element.js:connectedCallback:321","chrome://browser/content/tabbrowser.js:_setupInitialBrowserAndTab:415","chrome://browser/content/tabbrowser.js:init:59","chrome://browser/content/browser.js:onDOMContentLoaded:1671"]}] Barrier: profile-before-change
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_untrustedmodules_ping
+console.error: (new Error("SessionFile is closed", "resource:///modules/sessionstore/SessionFile.jsm", 380))
