@@ -1,207 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20221219 20:04:30.053" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20221220 18:11:36.275" rpa="false" schemaversion="3">
 <suite id="s1" name="BITests" source="C:\Users\surya\PycharmProjects\BITableau\testcases\BITests.robot">
 <test id="s1-t1" name="Total Spend And Shipments Report Smoke Test" line="31">
 <kw name="Log In To The Freight Payment Portal" library="resource" type="SETUP">
 <arg>regb21</arg>
-<arg>tester123</arg>
+<arg>freight123</arg>
 <arg>1</arg>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL.${env}}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221219 20:04:30.321" level="INFO">Opening browser 'Chrome' to base url 'https://portal.syncada.com/USBank/Login.aspx'.</msg>
-<status status="PASS" starttime="20221219 20:04:30.321" endtime="20221219 20:04:39.855"/>
+<msg timestamp="20221220 18:11:36.596" level="INFO">Opening browser 'Chrome' to base url 'https://portal.syncada.com/USBank/Login.aspx'.</msg>
+<status status="PASS" starttime="20221220 18:11:36.596" endtime="20221220 18:11:42.451"/>
 </kw>
 <kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
 <arg>30 seconds</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20221219 20:04:39.855" endtime="20221219 20:04:39.855"/>
+<status status="PASS" starttime="20221220 18:11:42.452" endtime="20221220 18:11:42.453"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221219 20:04:39.855" endtime="20221219 20:04:39.972"/>
+<status status="PASS" starttime="20221220 18:11:42.453" endtime="20221220 18:11:42.607"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Log In - U.S. Bank Freight Payment</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20221219 20:04:39.978" level="INFO">Page title is 'Log In - U.S. Bank Freight Payment'.</msg>
-<status status="PASS" starttime="20221219 20:04:39.972" endtime="20221219 20:04:39.978"/>
+<msg timestamp="20221220 18:11:42.611" level="INFO">Page title is 'Log In - U.S. Bank Freight Payment'.</msg>
+<status status="PASS" starttime="20221220 18:11:42.607" endtime="20221220 18:11:42.612"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>id:txtUserID</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20221219 20:04:39.978" endtime="20221219 20:04:39.990"/>
+<status status="PASS" starttime="20221220 18:11:42.612" endtime="20221220 18:11:42.630"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:txtUserID</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221219 20:04:39.992" level="INFO">Typing text 'regb21' into text field 'id:txtUserID'.</msg>
-<status status="PASS" starttime="20221219 20:04:39.990" endtime="20221219 20:04:40.066"/>
+<msg timestamp="20221220 18:11:42.630" level="INFO">Typing text 'regb21' into text field 'id:txtUserID'.</msg>
+<status status="PASS" starttime="20221220 18:11:42.630" endtime="20221220 18:11:42.714"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>id:txtPassword</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20221219 20:04:40.066" endtime="20221219 20:04:40.078"/>
+<status status="PASS" starttime="20221220 18:11:42.714" endtime="20221220 18:11:42.726"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:txtPassword</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221219 20:04:40.079" level="INFO">Typing text 'tester123' into text field 'id:txtPassword'.</msg>
-<status status="PASS" starttime="20221219 20:04:40.078" endtime="20221219 20:04:40.162"/>
+<msg timestamp="20221220 18:11:42.727" level="INFO">Typing text 'freight123' into text field 'id:txtPassword'.</msg>
+<status status="PASS" starttime="20221220 18:11:42.726" endtime="20221220 18:11:42.824"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>id:Main_btnContinue</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20221219 20:04:40.162" endtime="20221219 20:04:40.173"/>
+<status status="PASS" starttime="20221220 18:11:42.824" endtime="20221220 18:11:42.835"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:Main_btnContinue</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221219 20:04:40.174" level="INFO">Clicking button 'id:Main_btnContinue'.</msg>
-<status status="PASS" starttime="20221219 20:04:40.174" endtime="20221219 20:04:42.461"/>
+<msg timestamp="20221220 18:11:42.836" level="INFO">Clicking button 'id:Main_btnContinue'.</msg>
+<status status="PASS" starttime="20221220 18:11:42.835" endtime="20221220 18:11:45.488"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>id:txtSecurityQuestionAnswer</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<msg timestamp="20221219 20:05:43.594" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: disconnected: unable to connect to renderer
-  (failed to check if window was closed: disconnected: unable to connect to renderer)
-  (Session info: chrome=108.0.5359.125)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x00ECF243]
-	(No symbol) [0x00E57FD1]
-	(No symbol) [0x00D4D04D]
-	(No symbol) [0x00D3D3F8]
-	(No symbol) [0x00D3D1F8]
-	(No symbol) [0x00D4E5C3]
-	(No symbol) [0x00DAC1D8]
-	(No symbol) [0x00D98386]
-	(No symbol) [0x00D7163C]
-	(No symbol) [0x00D7269D]
-	GetHandleVerifier [0x01169A22+2655074]
-	GetHandleVerifier [0x0115CA24+2601828]
-	GetHandleVerifier [0x00F78C0A+619850]
-	GetHandleVerifier [0x00F77830+614768]
-	(No symbol) [0x00E605FC]
-	(No symbol) [0x00E65968]
-	(No symbol) [0x00E65A55]
-	(No symbol) [0x00E7051B]
-	BaseThreadInitThunk [0x75E67D69+25]
-	RtlInitializeExceptionChain [0x7739BB9B+107]
-	RtlClearBits [0x7739BB1F+191]
-</msg>
-<msg timestamp="20221219 20:05:43.607" level="FAIL">WebDriverException: Message: disconnected: unable to send message to renderer
-  (failed to check if window was closed: disconnected: unable to connect to renderer)
-  (Session info: chrome=108.0.5359.125)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x00ECF243]
-	(No symbol) [0x00E57FD1]
-	(No symbol) [0x00D4D04D]
-	(No symbol) [0x00D3E9F0]
-	(No symbol) [0x00D3EEF7]
-	(No symbol) [0x00D55F54]
-	(No symbol) [0x00D4F82B]
-	(No symbol) [0x00D4F350]
-	(No symbol) [0x00D4FBA2]
-	(No symbol) [0x00D4FE80]
-	(No symbol) [0x00D7BD55]
-	(No symbol) [0x00D7C22B]
-	(No symbol) [0x00DAE64C]
-	(No symbol) [0x00D985D4]
-	(No symbol) [0x00DAC9EB]
-	(No symbol) [0x00D98386]
-	(No symbol) [0x00D7163C]
-	(No symbol) [0x00D7269D]
-	GetHandleVerifier [0x01169A22+2655074]
-	GetHandleVerifier [0x0115CA24+2601828]
-	GetHandleVerifier [0x00F78C0A+619850]
-	GetHandleVerifier [0x00F77830+614768]
-	(No symbol) [0x00E605FC]
-	(No symbol) [0x00E65968]
-	(No symbol) [0x00E65A55]
-	(No symbol) [0x00E7051B]
-	BaseThreadInitThunk [0x75E67D69+25]
-	RtlInitializeExceptionChain [0x7739BB9B+107]
-	RtlClearBits [0x7739BB1F+191]
-</msg>
-<status status="FAIL" starttime="20221219 20:04:42.461" endtime="20221219 20:05:43.631"/>
+<status status="PASS" starttime="20221220 18:11:45.488" endtime="20221220 18:11:45.500"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:txtSecurityQuestionAnswer</arg>
 <arg>${SECURITY ANSWER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221219 20:05:43.631" endtime="20221219 20:05:43.631"/>
+<msg timestamp="20221220 18:11:45.500" level="INFO">Typing text '1' into text field 'id:txtSecurityQuestionAnswer'.</msg>
+<status status="PASS" starttime="20221220 18:11:45.500" endtime="20221220 18:11:45.558"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>id:Main_btnLogIn</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" starttime="20221219 20:05:43.631" endtime="20221219 20:05:43.631"/>
+<status status="PASS" starttime="20221220 18:11:45.558" endtime="20221220 18:11:45.570"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:Main_btnLogIn</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221219 20:05:43.631" endtime="20221219 20:05:43.631"/>
+<msg timestamp="20221220 18:11:45.570" level="INFO">Clicking button 'id:Main_btnLogIn'.</msg>
+<status status="PASS" starttime="20221220 18:11:45.570" endtime="20221220 18:11:47.766"/>
 </kw>
 <kw name="Location Should Be" library="SeleniumLibrary">
 <arg>${HOME PAGE URL}</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<status status="NOT RUN" starttime="20221219 20:05:43.631" endtime="20221219 20:05:43.631"/>
+<msg timestamp="20221220 18:11:47.774" level="INFO">Current location is 'https://portal.syncada.com/USBank/Home.aspx'.</msg>
+<status status="PASS" starttime="20221220 18:11:47.767" endtime="20221220 18:11:47.774"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Home - U.S. Bank Freight Payment</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="NOT RUN" starttime="20221219 20:05:43.631" endtime="20221219 20:05:43.631"/>
+<msg timestamp="20221220 18:11:47.779" level="INFO">Page title is 'Home - U.S. Bank Freight Payment'.</msg>
+<status status="PASS" starttime="20221220 18:11:47.774" endtime="20221220 18:11:47.779"/>
 </kw>
-<status status="FAIL" starttime="20221219 20:04:30.321" endtime="20221219 20:05:43.631"/>
+<status status="PASS" starttime="20221220 18:11:36.596" endtime="20221220 18:11:47.779"/>
+</kw>
+<kw name="Navigate To Tiles Page" library="resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath: //a[text()="Tableau Data Analytics (new)"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221220 18:11:47.779" endtime="20221220 18:11:47.978"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: //a[text()="Tableau Data Analytics (new)"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221220 18:11:47.979" level="INFO">Clicking element 'xpath: //a[text()="Tableau Data Analytics (new)"]'.</msg>
+<status status="PASS" starttime="20221220 18:11:47.978" endtime="20221220 18:11:48.068"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221220 18:11:48.068" endtime="20221220 18:11:48.081"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Data Analytics</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221220 18:11:55.419" level="INFO">Page title is 'Data Analytics'.</msg>
+<status status="PASS" starttime="20221220 18:11:48.081" endtime="20221220 18:11:55.419"/>
+</kw>
+<status status="PASS" starttime="20221220 18:11:47.779" endtime="20221220 18:11:55.420"/>
+</kw>
+<kw name="Wait Until Element Is Located In The Page" library="resource">
+<arg>${Total_Spend_Shipments_Xpath}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221220 18:11:55.422" endtime="20221220 18:12:05.205"/>
+</kw>
+<status status="PASS" starttime="20221220 18:11:55.421" endtime="20221220 18:12:05.205"/>
+</kw>
+<kw name="Navigate To Total Spend And Shipments Report" library="resource">
+<kw name="Wait Until Element Is Located In The Page" library="resource">
+<arg>${Total_Spend_Shipments_Xpath}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221220 18:12:05.205" endtime="20221220 18:12:05.238"/>
+</kw>
+<status status="PASS" starttime="20221220 18:12:05.205" endtime="20221220 18:12:05.238"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${Total_Spend_Shipments_Xpath}</arg>
+<arg>${Total_Spend_Shipments_Value}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20221220 18:12:05.238" level="INFO">Verifying element 'xpath://span[contains(text(),'Total Spend &amp; Shipments')]' contains exact text 'Total Spend &amp; Shipments'.</msg>
+<status status="PASS" starttime="20221220 18:12:05.238" endtime="20221220 18:12:05.266"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${DELAY1}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221220 18:12:55.266" level="INFO">Slept 50 seconds</msg>
+<status status="PASS" starttime="20221220 18:12:05.266" endtime="20221220 18:12:55.266"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${OUTPUTDIR}/TotalSpendAndShipments_Tile.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221220 18:12:55.555" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="UserssuryaAppDataLocalProgramsPythonPython310ScriptsScreen%20Shots/TotalSpendAndShipments_Tile.png"&gt;&lt;img src="UserssuryaAppDataLocalProgramsPythonPython310ScriptsScreen%20Shots/TotalSpendAndShipments_Tile.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221220 18:12:55.266" endtime="20221220 18:12:55.555"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Total_Spend_Shipments_Xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221220 18:12:55.555" level="INFO">Clicking element 'xpath://span[contains(text(),'Total Spend &amp; Shipments')]'.</msg>
+<status status="PASS" starttime="20221220 18:12:55.555" endtime="20221220 18:12:55.644"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221220 18:12:55.644" endtime="20221220 18:12:55.658"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${DELAY1}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221220 18:13:45.659" level="INFO">Slept 50 seconds</msg>
+<status status="PASS" starttime="20221220 18:12:55.658" endtime="20221220 18:13:45.659"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Total Spend &amp; Shipments</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221220 18:13:45.666" level="INFO">Page title is 'Total Spend &amp; Shipments'.</msg>
+<status status="PASS" starttime="20221220 18:13:45.659" endtime="20221220 18:13:45.666"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${OUTPUTDIR}/Total Spend &amp; Shipments.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221220 18:13:45.905" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="UserssuryaAppDataLocalProgramsPythonPython310ScriptsScreen%20Shots/Total%20Spend%20%26%20Shipments.png"&gt;&lt;img src="UserssuryaAppDataLocalProgramsPythonPython310ScriptsScreen%20Shots/Total%20Spend%20%26%20Shipments.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221220 18:13:45.666" endtime="20221220 18:13:45.905"/>
+</kw>
+<status status="PASS" starttime="20221220 18:12:05.205" endtime="20221220 18:13:45.905"/>
+</kw>
+<kw name="Total Spend And Shipments Report Smoke Test" library="resource">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${Total_Spend_And_Shipments_HeaderText_Xpath}</arg>
+<arg>${Total_Spend_And_Shipments_HeaderText_Value}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20221220 18:13:45.905" level="INFO">Verifying element 'xpath: //h1[normalize-space()='Total Spend &amp; Shipments']' contains exact text 'Total Spend &amp; Shipments'.</msg>
+<status status="PASS" starttime="20221220 18:13:45.905" endtime="20221220 18:13:45.943"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${Start_Date_Xpath}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<msg timestamp="20221220 18:14:16.177" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221220 18:14:16.177" level="FAIL">Element with locator 'xpath: /html/body/div[2]/div[2]/div[1]/div[1]/div/div[2]/div[14]/div/div/div/div/div/div[2]/div/span[1]/input' not found.</msg>
+<status status="FAIL" starttime="20221220 18:13:45.943" endtime="20221220 18:14:16.231"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>1/1/2000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221220 18:14:16.231" endtime="20221220 18:14:16.231"/>
+</kw>
+<status status="FAIL" starttime="20221220 18:13:45.905" endtime="20221220 18:14:16.231"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221219 20:05:43.631" endtime="20221219 20:05:45.700"/>
+<status status="PASS" starttime="20221220 18:14:16.231" endtime="20221220 18:14:18.603"/>
 </kw>
-<status status="FAIL" starttime="20221219 20:04:30.305" endtime="20221219 20:05:45.700">Setup failed:
-WebDriverException: Message: disconnected: unable to send message to renderer
-  (failed to check if window was closed: disconnected: unable to connect to renderer)
-  (Session info: chrome=108.0.5359.125)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x00ECF243]
-	(No symbol) [0x00E57FD1]
-	(No symbol) [0x00D4D04D]
-	(No symbol) [0x00D3E9F0]
-	(No symbol) [0x00D3EEF7]
-	(No symbol) [0x00D55F54]
-	(No symbol) [0x00D4F82B]
-	(No symbol) [0x00D4F350]
-	(No symbol) [0x00D4FBA2]
-	(No symbol) [0x00D4FE80]
-	(No symbol) [0x00D7BD55]
-	(No symbol) [0x00D7C22B]
-	(No symbol) [0x00DAE64C]
-	(No symbol) [0x00D985D4]
-	(No symbol) [0x00DAC9EB]
-	(No symbol) [0x00D98386]
-	(No symbol) [0x00D7163C]
-	(No symbol) [0x00D7269D]
-	GetHandleVerifier [0x01169A22+2655074]
-	GetHandleVerifier [0x0115CA24+2601828]
-	GetHandleVerifier [0x00F78C0A+619850]
-	GetHandleVerifier [0x00F77830+614768]
-	(No symbol) [0x00E605FC]
-	(No symbol) [0x00E65968]
-	(No symbol) [0x00E65A55]
-	(No symbol) [0x00E7051B]
-	BaseThreadInitThunk [0x75E67D69+25]
-	RtlInitializeExceptionChain [0x7739BB9B+107]
-	RtlClearBits [0x7739BB1F+191]
-</status>
+<status status="FAIL" starttime="20221220 18:11:36.591" endtime="20221220 18:14:18.603">Element with locator 'xpath: /html/body/div[2]/div[2]/div[1]/div[1]/div/div[2]/div[14]/div/div/div/div/div/div[2]/div/span[1]/input' not found.</status>
 </test>
 <doc>A test suite with a single test for Log In - U.S. Bank Freight Payment
 Created by Surya Attili</doc>
-<status status="FAIL" starttime="20221219 20:04:30.053" endtime="20221219 20:05:45.705"/>
+<status status="FAIL" starttime="20221220 18:11:36.276" endtime="20221220 18:14:18.606"/>
 </suite>
 <statistics>
 <total>
@@ -214,32 +237,5 @@ Created by Surya Attili</doc>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20221219 20:05:43.594" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: disconnected: unable to connect to renderer
-  (failed to check if window was closed: disconnected: unable to connect to renderer)
-  (Session info: chrome=108.0.5359.125)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x00ECF243]
-	(No symbol) [0x00E57FD1]
-	(No symbol) [0x00D4D04D]
-	(No symbol) [0x00D3D3F8]
-	(No symbol) [0x00D3D1F8]
-	(No symbol) [0x00D4E5C3]
-	(No symbol) [0x00DAC1D8]
-	(No symbol) [0x00D98386]
-	(No symbol) [0x00D7163C]
-	(No symbol) [0x00D7269D]
-	GetHandleVerifier [0x01169A22+2655074]
-	GetHandleVerifier [0x0115CA24+2601828]
-	GetHandleVerifier [0x00F78C0A+619850]
-	GetHandleVerifier [0x00F77830+614768]
-	(No symbol) [0x00E605FC]
-	(No symbol) [0x00E65968]
-	(No symbol) [0x00E65A55]
-	(No symbol) [0x00E7051B]
-	BaseThreadInitThunk [0x75E67D69+25]
-	RtlInitializeExceptionChain [0x7739BB9B+107]
-	RtlClearBits [0x7739BB1F+191]
-</msg>
 </errors>
 </robot>

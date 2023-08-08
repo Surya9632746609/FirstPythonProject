@@ -4,7 +4,7 @@ Documentation     A test suite with a single test for Log In - U.S. Bank Freight
 Library           SeleniumLibrary    #timeout=30
 Resource          resource.robot
 #Test Teardown    Close Browser
-Test Setup      Log In To The Freight Payment Portal    regb21  tester123   1
+Test Setup      Log In To The Freight Payment Portal    regb21  freight123   1
 #Test Setup    Set Selenium Implicit Wait      30 seconds
 Library     Collections
 
